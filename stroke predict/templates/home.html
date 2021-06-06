@@ -1,0 +1,53 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Stroke Prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+			gender :  <select name="gender" id="1" style="width:150px;">
+			<option value="0">female </option>
+			<option value="1">male  </option>  
+			</select><br><br>
+			hypertension :<select name="hypertension" id="2" style="width:150px;">
+			<option value="0">no </option>
+			<option value="1">yes  </option>  
+			</select><br><br>
+			heart_disease :<select name="heart_disease" id="3" style="width:150px;">
+			<option value="0">no </option>
+			<option value="1">yes  </option>  
+			</select><br><br>
+			ever_married :<select name="ever_married" id="4" style="width:150px;">
+			<option value="0">no </option>
+			<option value="1">yes  </option>  
+			</select><br><br>
+			work_type :<select name="work_type" id="5" style="width:150px;">
+			<option value="0">Private </option>
+			<option value="1">Self-employed  </option>  
+			<option value="2">Govt_job  </option>  
+			<option value="3">children  </option>  
+			<option value="4">Never_worked  </option>  
+			</select><br><br>
+			Residence_type :<select name="Residence_type" id="4" style="width:150px;">
+			<option value="0">Urban </option>
+			<option value="1">Rural  </option>  
+			</select><br><br>
+			smoking_status :<select name="smoking_status" id="4" style="width:150px;">
+			<option value="0">never smoked </option>
+			<option value="1">formerly smoked  </option>  
+			<option value="2">smokes  </option>  
+			</select><br><br>
+           <b> 
+            Age :  <input type="number", name='age', placeholder="please enter your age"> <br><br>
+			bmi :  <input type="number" step="0.1" name='bmi', placeholder="please enter your bmi"> <br><br>
+           <br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='static\flower1.jpg' alt="flower">
+        
+    </center>
+
+    </body>
+</html>

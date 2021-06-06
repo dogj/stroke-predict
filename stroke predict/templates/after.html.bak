@@ -1,0 +1,41 @@
+html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+
+
+	<script>
+		var test_data = 'test';
+	</script>
+    {%if data == 0%}
+
+    <h1>{{data}}</h1>
+	<h1>{{data2}}</h1>
+	<h1>"the value for number is: " + {{data}}</h1>
+
+
+    {%else%}
+
+    <h1>{{data}}</h1>
+	<h1>"the value for number is: " + {{data}}</h1>
+
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+
